@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NewTab</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">  
 </head>
 <body>   
+    <div class="container">
 <!-- Clock-->
     <h1 id="clock"></h1>
     <script src="clock.js"></script>
 <!-- Search bar-->
 <div  id="search" class="element">
     <form id="search-form" action="https://www.google.com/search" method="GET">
-        <input id="search-bar" type="text" name="q" placeholder="search">
-        
+        <input id="search-bar" type="text" name="q">        
 </div>
-<!--SpeedDial-->
+<!--Notes-->
+<div class="Notes">
+<h3 id="h3notes">Notes</h3>   
+<ul id="notes-list">
+  <li>blaaaaaaaaaa</li>  
+  <li>blo</li>
+  <li>ble</li>
+  <li></li>
+</ul>
+</div>
+<script src="Notes.js"></script>
 
-
-
-
-
+</div>
 </body>
 </html>
