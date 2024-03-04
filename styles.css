@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    background-color: #222222;
+    background-image: linear-gradient(circle, #222222, black);
+}
+#clock{
+    font-size: 12em;
+    text-align: center;
+    color:#bababa ;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+#search{
+    display: inline-flexbox;
+    text-align: center;
+}
+#search-bar{
+    margin-top: 100px ;
+    height: 20px;
+    width: 650px;
+    border-radius: 5px;
+    background-color: #bababa;
+    color: black;
+    font-size: 1.2em;
+    border:3px solid black;
+}
+#search-bar:focus{
+    border-color: yellowgreen;
+}
