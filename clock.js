@@ -24,4 +24,4 @@ if (seconds < 10) {
 document.getElementById("clock").textContent = hours + ":" +minutes ;
 }
 updateClock();
-setInterval(updateClock, 15000);
+setInterval(updateClock, 1000);
