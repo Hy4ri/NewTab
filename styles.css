@@ -90,7 +90,7 @@ body {
 .SpeedDial li {
   border: inset 1px grey;
   border-radius: 2px;
-  width: 200px;
+  width: 10vw;
 }
 .SpeedDial a {
   text-decoration: none;
