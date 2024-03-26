@@ -10,28 +10,29 @@
 <body>   
 <div class="container">
 <!-- Clock-->
-    <h1 class="clock" id="clock"></h1>
-    <script src="clock.js"></script>
+    <h1 id="clock-min"></h1>
+    <h1 id="clock-h"></h1>
+    <script src="clock-min.js"></script>
+    <script src="clock-h.js"></script>
+
 <!-- Search bar-->
     <div class="search"> 
         <form action="https://www.google.com/search" method="GET">
-            <input type="text" name="q">       
+            <input type="text" name="q" placeholder="Search">       
     </div>  
-<!--Notes-->
+<!--Notes
     <div class="Notes">
-        <h2>Notes</h2>   
-        <ul>
-            <li>blaaaaaaaaaa</li>  
-            <li>blo</li>
-            <li>ble</li>
-            <li></li>
-        </ul>
+        <h2>Notes</h2>
+        <div id="array-container"></div>
+        <span onclick="addnote()">add</span>
     </div>
+    <script src="notes.js"></script> -->
 <!--SpeedDial-->
     <div class="SpeedDial">
         <h2>SpeedDial</h2>
         <ul id="speedlist">
             <li><a href="https://www.github.com">Github</a></li>
+            <li><a href="https://www.unknowncheats.me/forum/other-games/614330-vampire-survivors-cheat-table.html">UnknownCheats</a></li>
         </ul>
     </div>
 </div>

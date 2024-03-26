@@ -1,3 +1,9 @@
+:root {
+  --tcolor: yellow;
+  --tcolor2: whitesmoke;
+  --tcolor3: hsl(0, 0%, 70%);
+}
+
 body {
   margin: 0;
   background-image: linear-gradient(45deg, #222222, #030303);
@@ -9,58 +15,72 @@ body {
 }
 .container {
   display: grid;
-  grid-template-columns: 20vw 60vw 20vw;
+  grid-template-columns: 20vw 30vw 30vw 20vw;
   grid-template-rows: 13vh auto 30vh auto 34vh;
 }
 /*Clock*/
-.clock {
+#clock-h {
   grid-row: 1 / 1;
   grid-column: 2 / 3;
-  justify-self: center;
+  justify-self: end;
   font-size: 12em;
-  color: #ffb900;
+  color: var(--tcolor);
+  text-shadow: #3f3f3f 2px 2px 20px;
+  user-select: none;
+}
+#clock-min {
+  grid-row: 1 / 1;
+  grid-column: 3 / 4;
+  justify-self: start;
+  font-size: 12em;
+  color: var(--tcolor2);
   text-shadow: #3f3f3f 2px 2px 20px;
   user-select: none;
 }
 /*Search*/
 .search {
   grid-row: 4 / 5;
-  grid-column: 2 / 3;
+  grid-column: 2 / 4;
   justify-self: center;
+  align-self: center;
   user-select: none;
 }
 .search input {
   height: 2vh;
   width: 40vw;
   border-radius: 3.5px;
-  background-color: grey;
+  background-color: var(--tcolor3);
   color: black;
   font-size: 16px;
   border: 1px solid black;
 }
+.search input::placeholder {
+  color: var(--tcolor);
+}
 .search input:focus {
-  border-color: rgba(245, 245, 245, 0.1);
+  border-color: var(--tcolor2);
 }
 .search input:hover {
   background-color: hsl(0, 0%, 63%);
   cursor: pointer;
 }
-/*Notes*/
+/*Notes
 .Notes {
   grid-row: 2/2;
   grid-column: 3/4;
-  justify-self: stretch;
+
   color: white;
   font-size: 1.2em;
+  margin-top: 0.5vh;
   padding-left: 25px;
   border-left: 1px solid white;
 }
 .Notes h2 {
-  color: #ffb900;
+  color: var(--tcolor);
   text-shadow: #3f3f3f 2px 2px 20px;
   font-size: 1.3em;
   user-select: none;
-}
+}*/
 /*SpeedDial*/
 .SpeedDial {
   grid-row: 2/2;
@@ -69,31 +89,35 @@ body {
   font-size: 1.2em;
   padding-left: 50px;
   user-select: none;
+  border-right: 1px solid var(--tcolor2);
 }
 .SpeedDial h2 {
-  color: #ffb900;
+  color: var(--tcolor);
   text-shadow: #3f3f3f 2px 2px 20px;
   font-size: 1.2em;
   font-weight: bold;
 }
 .SpeedDial ul {
   padding-top: 10px;
-  list-style-type: none;
+  color: var(--tcolor2);
 }
 .SpeedDial li {
-  border: inset 1px grey;
   border-radius: 2px;
   width: 10vw;
+  margin-top: 0.5vh;
 }
 .SpeedDial a {
   text-decoration: none;
   font-style: normal;
   font-size: 1.2em;
-  color: white;
+  color: var(--tcolor2);
 }
 .SpeedDial a:visited {
-  color: white;
+  color: var(--tcolor2);
 }
 .SpeedDial a:hover {
-  color: gray;
+  color: var(--tcolor3);
+}
+span {
+  background-color: red;
 }
