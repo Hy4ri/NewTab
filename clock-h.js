@@ -7,7 +7,6 @@ function updateClock() {
 
   if (hours > 12) {
     hours -= 12;
-    meridiem = "PM";
   } else if (hours === 0) {
     hours = 12;
   }
@@ -21,7 +20,8 @@ function updateClock() {
     seconds = "0" + seconds;
   }
 
-  document.getElementById("clock-h").textContent = hours + ":";
+  document.getElementById("clock-h").textContent = hours + ":" ;
+  document.getElementById("clock-min").textContent = minutes  ;
 }
 updateClock();
-setInterval(updateClock, 10000);
+setInterval(updateClock, 1000);

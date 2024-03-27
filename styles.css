@@ -22,7 +22,7 @@ body {
 #clock-h {
   grid-row: 1 / 1;
   grid-column: 2 / 3;
-  justify-self: end;
+  justify-self: self-end;
   font-size: 12em;
   color: var(--tcolor);
   text-shadow: #3f3f3f 2px 2px 20px;
@@ -31,7 +31,7 @@ body {
 #clock-min {
   grid-row: 1 / 1;
   grid-column: 3 / 4;
-  justify-self: start;
+  justify-self: self-start;
   font-size: 12em;
   color: var(--tcolor2);
   text-shadow: #3f3f3f 2px 2px 20px;
@@ -117,7 +117,4 @@ body {
 }
 .SpeedDial a:hover {
   color: var(--tcolor3);
-}
-span {
-  background-color: red;
 }
