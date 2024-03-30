@@ -1,7 +1,7 @@
 :root {
-  --tcolor: yellow;
-  --tcolor2: whitesmoke;
-  --tcolor3: hsl(0, 0%, 70%);
+  --tcolor: hsl(60, 100%, 45%);
+  --tcolor2: hsl(0, 0%, 85%);
+  --tcolor3: hsl(0, 0%, 60%);
 }
 
 body {
@@ -25,7 +25,7 @@ body {
   justify-self: self-end;
   font-size: 12em;
   color: var(--tcolor);
-  text-shadow: #3f3f3f 2px 2px 20px;
+  text-shadow: var(--tcolor2) 2px 2px 5px;
   user-select: none;
 }
 #clock-min {
@@ -34,7 +34,7 @@ body {
   justify-self: self-start;
   font-size: 12em;
   color: var(--tcolor2);
-  text-shadow: #3f3f3f 2px 2px 20px;
+  text-shadow: var(--tcolor) 2px 2px 5px;
   user-select: none;
 }
 /*Search*/
@@ -51,11 +51,14 @@ body {
   border-radius: 3.5px;
   background-color: var(--tcolor3);
   color: black;
+  text-shadow: var(--tcolor) 1px 1px 1px;
   font-size: 16px;
   border: 1px solid black;
+  box-shadow: var(--tcolor) 1px 1px 2px;
 }
 .search input::placeholder {
   color: var(--tcolor);
+  text-shadow: black 2px 2px 5px;
 }
 .search input:focus {
   border-color: var(--tcolor2);
@@ -93,13 +96,14 @@ body {
 }
 .SpeedDial h2 {
   color: var(--tcolor);
-  text-shadow: #3f3f3f 2px 2px 20px;
+  text-shadow: black 1px 1px 1px;
   font-size: 1.2em;
   font-weight: bold;
 }
 .SpeedDial ul {
   padding-top: 10px;
   color: var(--tcolor2);
+  text-shadow: black 1px 1px 2px;
 }
 .SpeedDial li {
   border-radius: 2px;
