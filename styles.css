@@ -51,8 +51,9 @@ body {
   border-radius: 3.5px;
   background-color: var(--tcolor3);
   color: black;
-  text-shadow: var(--tcolor) 1px 1px 1px;
+  text-shadow: var(--tcolor2) 1px 1px 1px;
   font-size: 16px;
+  font-weight: bolder;
   border: 1px solid black;
   box-shadow: var(--tcolor) 1px 1px 2px;
 }
