@@ -68,23 +68,18 @@ body {
   background-color: hsl(0, 0%, 63%);
   cursor: pointer;
 }
-/*Notes
-.Notes {
+/*Weather*/
+#Weather{
   grid-row: 2/2;
-  grid-column: 3/4;
-
-  color: white;
-  font-size: 1.2em;
+  grid-column: 4/5;
+  height: 50px;
+  width: 200px;
+  border: none;
   margin-top: 0.5vh;
-  padding-left: 25px;
-  border-left: 1px solid white;
+  padding-left: 20px;
+  border-left: 1px solid var(--tcolor2);
+  margin-left: 70px;
 }
-.Notes h2 {
-  color: var(--tcolor);
-  text-shadow: #3f3f3f 2px 2px 20px;
-  font-size: 1.3em;
-  user-select: none;
-}*/
 /*SpeedDial*/
 .SpeedDial {
   grid-row: 2/2;
