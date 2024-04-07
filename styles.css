@@ -2,6 +2,7 @@
   --tcolor: hsl(60, 100%, 45%);
   --tcolor2: hsl(0, 0%, 85%);
   --tcolor3: hsl(0, 0%, 60%);
+  --tcolor4: hsl(0, 0%, 0%);
 }
 
 body {
@@ -25,8 +26,9 @@ body {
   justify-self: self-end;
   font-size: 12em;
   color: var(--tcolor);
-  text-shadow: var(--tcolor3) 2px 2px 500px;
+  text-shadow: var(--tcolor4) 1px 1px 1px;
   user-select: none;
+  padding-right: 3vw;
 }
 #clock-min {
   grid-row: 1 / 1;
@@ -34,7 +36,16 @@ body {
   justify-self: self-start;
   font-size: 12em;
   color: var(--tcolor2);
-  text-shadow: var(--tcolor3) 2px 2px 500px;
+  text-shadow: var(--tcolor4) 2px 2px 50px;
+  user-select: none;
+}
+#dors{
+  grid-row: 1 / 1;
+  grid-column: 2 / 3;
+  font-size: 12em;
+  justify-self: self-end;
+  color: var(--tcolor);
+  text-shadow: white 2px 2px 400px;
   user-select: none;
 }
 /*Search*/

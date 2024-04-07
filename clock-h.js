@@ -20,8 +20,8 @@ function updateClock() {
     seconds = "0" + seconds;
   }
 
-  document.getElementById("clock-h").textContent = hours + ":" ;
-  document.getElementById("clock-min").textContent = minutes  ;
+  document.getElementById("clock-h").textContent = hours;
+  document.getElementById("clock-min").textContent = minutes;
 }
 updateClock();
 setInterval(updateClock, 1000);
