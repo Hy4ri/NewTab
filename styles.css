@@ -11,8 +11,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
 }
 .container {
   display: grid;
@@ -26,9 +25,8 @@ body {
   justify-self: self-end;
   font-size: 12em;
   color: var(--tcolor);
-  text-shadow: var(--tcolor4) 1px 1px 1px;
+  text-shadow: var(--tcolor4) 2px 2px 50px;
   user-select: none;
-  padding-right: 3vw;
 }
 #clock-min {
   grid-row: 1 / 1;
@@ -39,15 +37,6 @@ body {
   text-shadow: var(--tcolor4) 2px 2px 50px;
   user-select: none;
 }
-#dors{
-  grid-row: 1 / 1;
-  grid-column: 2 / 3;
-  font-size: 12em;
-  justify-self: self-end;
-  color: var(--tcolor);
-  text-shadow: white 2px 2px 400px;
-  user-select: none;
-}
 /*Search*/
 .search {
   grid-row: 4 / 5;
@@ -55,6 +44,7 @@ body {
   justify-self: center;
   align-self: center;
   user-select: none;
+  padding-right: 5vw;
 }
 .search input {
   height: 2vh;
