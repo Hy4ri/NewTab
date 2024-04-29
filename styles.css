@@ -19,23 +19,22 @@ body {
   grid-template-rows: 13vh auto 45vh auto;
 }
 /*Clock*/
+.clock{
+  font-size: 12em;
+  user-select: none;
+  text-shadow: var(--tcolor4) 2px 2px 50px;
+}
 #clock-h {
   grid-row: 1 / 1;
   grid-column: 2 / 3;
   justify-self: self-end;
-  font-size: 12em;
   color: var(--tcolor);
-  text-shadow: var(--tcolor4) 2px 2px 50px;
-  user-select: none;
 }
 #clock-min {
   grid-row: 1 / 1;
   grid-column: 3 / 4;
   justify-self: self-start;
-  font-size: 12em;
   color: var(--tcolor2);
-  text-shadow: var(--tcolor4) 2px 2px 50px;
-  user-select: none;
 }
 /*Search*/
 .search {
@@ -70,16 +69,16 @@ body {
   cursor: pointer;
 }
 /*Weather*/
-#Weather{
+.Weather{
   grid-row: 2/2;
   grid-column: 4/5;
-  height: 50px;
-  width: 200px;
+  height: 5vh;
+  width: 10vw;
   border: none;
   margin-top: 0.5vh;
-  padding-left: 20px;
+  padding-left: 1vw;
   border-left: 1px solid var(--tcolor2);
-  margin-left: 70px;
+  margin-left: 3vw;
 }
 /*SpeedDial*/
 .SpeedDial {
@@ -87,10 +86,10 @@ body {
   grid-column: 1/2;
   justify-self: stretch;
   font-size: 1.2em;
-  padding-left: 50px;
+  padding-left: 3vw;
   user-select: none;
   border-right: 1px solid var(--tcolor2);
-  margin-right: 70px;
+  margin-right: 3vw;
 }
 .SpeedDial h2 {
   color: var(--tcolor);
@@ -99,8 +98,8 @@ body {
   font-weight: 800;
 }
 .SpeedDial ul {
-  padding-top: 10px;
-  padding-left: 60px;
+  padding-top: 1vh;
+  padding-left: 4vw;
   color: var(--tcolor2);
   text-shadow: black 1px 1px 2px;
   font-weight: 600;
@@ -124,4 +123,18 @@ body {
 .SpeedDial a:hover {
   color: var(--tcolor3);
   font-weight: 700;
+}
+/*portrait mode*/
+@media (orientation: portrait) {
+  .clock{
+    font-size: 10em;
+  }
+  .SpeedDial{
+    grid-row: 4/4;
+    font-size: 0.9em;
+    padding-left: 1vw;
+  }
+  .Weather{
+    grid-row: 4/4;
+  }
 }
