@@ -1,5 +1,5 @@
 :root {
-  --tcolor: hsl(60, 100%, 45%);
+  --tcolor:  hsl(353, 61%, 50%);
   --tcolor2: hsl(0, 0%, 85%);
   --tcolor3: hsl(0, 0%, 60%);
   --tcolor4: hsl(0, 0%, 0%);
@@ -11,7 +11,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: JetBrainsMono Nerd Font,'Courier New', Courier, monospace;
 }
 .container {
   display: grid;
