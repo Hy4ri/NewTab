@@ -57,10 +57,6 @@ body {
   border: 1px solid black;
   box-shadow: var(--tcolor) 1px 1px 2px;
 }
-.search input::placeholder {
-  color: var(--tcolor);
-  text-shadow: black 1px 1px 1px;
-}
 .search input:focus {
   border-color: var(--tcolor2);
 }
