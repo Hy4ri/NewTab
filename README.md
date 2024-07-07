@@ -1,1 +1,1 @@
-Simple newtab page for browser
+Simple Homepage for browsers
