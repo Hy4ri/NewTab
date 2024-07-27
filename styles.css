@@ -144,4 +144,7 @@ body {
   .Weather{
     grid-row: 4/4;
   }
+  .Weather-h2{
+    grid-row: 4/4;
+  }
 }
