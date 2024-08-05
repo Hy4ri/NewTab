@@ -73,7 +73,7 @@ body {
   padding-top: 9vh;
   padding-left: 3vw;
   border-left: 1px solid var(--tcolor2);
-  font-size: 1.9rem;
+  font-size: 1.5rem;
 }
 .Weather-h2 {
   grid-row: 2/2;
@@ -84,7 +84,7 @@ body {
   padding-left: 2vw;
   border-left: 1px solid var(--tcolor2);
   text-shadow: black 1px 1px 1px;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 800;
 }
 /*SpeedDial*/
@@ -101,7 +101,7 @@ body {
 .SpeedDial h2 {
   color: var(--tcolor);
   text-shadow: black 1px 1px 1px;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 800;
 }
 .SpeedDial ul {
@@ -109,18 +109,16 @@ body {
   padding-left: 4vw;
   color: var(--tcolor2);
   text-shadow: black 1px 1px 2px;
-  font-weight: 600;
 }
 .SpeedDial li {
   border-radius: 2px;
   width: 10vw;
   margin-top: 0.5vh;
-  font-weight: 600;
 }
 .SpeedDial a {
   text-decoration: none;
   font-style: normal;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   color: var(--tcolor2);
 }
 .SpeedDial a:visited {
