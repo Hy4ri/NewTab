@@ -4,30 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NewTab</title>
-    <link rel="stylesheet" href="styles.css">  
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/svg" href="micon.svg">
 </head>
-<body>   
+<body>
 <div class="container">
 <!-- Clock-->
     <h1 class="clock" id="clock-min"></h1>
     <h1 class="clock" id="clock-h"></h1>
-    <script src="clock-h.js"></script>
+    <script src="clock.js"></script>
 <!-- Search bar-->
-    <div class="search"> 
+    <div class="search">
         <form action="https://www.google.com/search" method="GET">
-            <input type="text" name="q">       
-    </div>  
+            <input type="text" name="q">
+    </div>
 <!--Weather-->
 <h2 class="Weather-h2">Weather</h2>
 <div class="Weather" id="weather">As-Salt:</div>
     <script src="weather.js"></script>
-<!--SpeedDial-->
-    <div class="SpeedDial">
-        <h2>SpeedDial</h2>
-        <ul id="speedlist">
-            <li><a href="https://www.github.com">Github</a></li>
-    </div>
-</div>
-</body>
-</html>
+
+    <!-- SpeedDial -->
+        <<div class="SpeedDial">
+            <h2>SpeedDial</h2>
+            <ul id="speedlist">
+
+            </ul>
+            <button id="add-entry">+</button>
+        </div>
+        <script src="speeddial.js"></script>
+
+    </body>
+    </html>
